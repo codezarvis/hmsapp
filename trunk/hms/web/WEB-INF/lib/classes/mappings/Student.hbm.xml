@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+  
+  
+<hibernate-mapping>
+	<class name="com.vitam.domain.sub.impl.StudentImpl" table="studentmaster">
+		<id column="uid" name="uid" type="java.lang.Long">
+			<generator class="native" />
+		</id>
+		
+		<property column="guid" name="guid" type="java.lang.String" />
+		<property column="registrationNumber" name="registrationNumber" type="java.lang.String" />
+		<property column="surName" name="surName" type="java.lang.String" />
+		<property column="firstName" name="firstName" type="java.lang.String" />
+		<property column="gender" name="gender" type="java.lang.String" />
+		<property column="dateOfBirth" name="dateOfBirth" type="java.lang.String" />
+		<property column="branch" name="branch" type="java.lang.String" />
+		<property column="sscAggregate" name="sscAggregate" type="java.lang.String" />
+		<property column="interAggregate" name="interAggregate" type="java.lang.String" />
+		<property column="bTechAggregate" name="bTechAggregate" type="java.lang.String" />
+		<property column="mcaAggregate" name="mcaAggregate" type="java.lang.String" />
+		<property column="mbaAggregate" name="mbaAggregate" type="java.lang.String" />
+		<property column="mTechAggregate" name="mTechAggregate" type="java.lang.String" />
+		<property column="phoneNumber" name="phoneNumber" type="java.lang.String" />
+		<property column="email" name="email" type="java.lang.String" />
+		<property column="studentProfilePic" name="studentProfilePic" type="binary" />
+		<property column="address" name="address" type="java.lang.String" />
+		<property column="createdBy" name="createdBy" type="java.lang.String" />
+		<property column="modifiedBy" name="modifiedBy" type="java.lang.String" />
+		<property column="createdOn" name="createdOn" type="java.util.Date" />
+		<property column="modifiedOn" name="modifiedOn" type="java.util.Date" />
+		<property column="active" name="active" type="java.lang.Long" />
+	</class>
+</hibernate-mapping>
